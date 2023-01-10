@@ -1,6 +1,9 @@
 # DE
 Data Engineering
 
+(a) 
+ER DIAGRAM
+Open this repository's github link on draw.io
 
 (b)
 SCHEMA LOGICO RELAZIONALE
