@@ -5,15 +5,21 @@ Data Engineering
 (b)
 SCHEMA LOGICO RELAZIONALE
 
-1. CLIENTE
-2. CONTRATTO
-3. CONTATORE
-4. LETTURA
-5. FASCIA ORARIA
-6. BOLLETTA     
-7. OPERATORE
-8. AREA GEOGRAFICA
-9. CITTA'
+1. CLIENTE(CODICE_CLIENTE, NumeroTelefono, Indirizzo)
+1.1 CLIENTE PRIVATO(Nome, Cognome)
+1.2 CLIENTE BUSINESS(RagioneSociale, NomePersonaRiferimento, CognomePersonaRiferimento)
+2. CONTRATTO(CODICE_CONTRATTO, IndirizzoLocale, DataStipulaContratto, DataInizioFornitura, CodiceCliente(FK), KWMassimi)
+2.1 CONTRATTO PRIVATO
+2.2 CONTRATTO BUSINESS(TempoMassimoIntervento)
+3. CONTATORE(CODICE_ALFANUMERICO, Modello, KWMassimiErogabili, CodiceContratto(FK))
+4. LETTURA(CODICE_ALFANUMERICO(FK), MATRICOLA OPERATORE(FK), KwLettiSulContatore)
+5. FASCIA ORARIA(CODICE_ALFANUMERICO, OraInizioValidità, OraFineValidità, Prezzo KWh)
+6. BOLLETTA(NUMERO_PROGRESSIVO, CODICE_CONTRATTO, DataEmissione, PeriodoRiferimento, QuantitàCorrenteErogata, DataScadenzaPagamento, SommaDaPagare, CorrenteConsumata, CodiceFasciaOraria(FK)     
+7. OPERATORE(MATRICOLA, Nome, Cognome, NumeroCellulare)
+LAVORA IN(DataInizio, DataFine, Tempo)
+8. AREA GEOGRAFICA(CODICE_ALFANUMERICO)
+APPARTIENE A
+9. CITTA'(Città)
 
 
 
