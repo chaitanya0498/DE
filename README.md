@@ -7,21 +7,33 @@ Open this repository's github link on draw.io
 (b)
 SCHEMA LOGICO RELAZIONALE
 
-1. CLIENTE(CODICE_CLIENTE, NumeroTelefono, Indirizzo)
-1.1 CLIENTE PRIVATO(Nome, Cognome)
-1.2 CLIENTE BUSINESS(RagioneSociale, NomePersonaRiferimento, CognomePersonaRiferimento)
-2. CONTRATTO(CODICE_CONTRATTO, IndirizzoLocale, DataStipulaContratto, DataInizioFornitura, CodiceCliente(FK), KWMassimi)
-2.1 CONTRATTO PRIVATO
-2.2 CONTRATTO BUSINESS(TempoMassimoIntervento)
-3. CONTATORE(CODICE_ALFANUMERICO, Modello, KWMassimiErogabili, CodiceContratto(FK))
-4. LETTURA(CODICE_ALFANUMERICO(FK), MATRICOLA OPERATORE(FK), KwLettiSulContatore)
-5. FASCIA ORARIA(CODICE_ALFANUMERICO, OraInizioValidità, OraFineValidità, Prezzo KWh)
-6. BOLLETTA(NUMERO_PROGRESSIVO, CODICE_CONTRATTO, DataEmissione, PeriodoRiferimento, QuantitàCorrenteErogata, DataScadenzaPagamento, SommaDaPagare, CorrenteConsumata, CodiceFasciaOraria(FK)     
-7. OPERATORE(MATRICOLA, Nome, Cognome, NumeroCellulare)
-LAVORA IN(DataInizio, DataFine, Tempo)
+1. CLIENTE
+(CODICE_CLIENTE, TipologiaCliente, Nome, Cognome, NumeroTelefono, Indirizzo, RagioneSociale, NomePersonaRif., CognomePersonaRif.)
+
+2. CONTRATTO
+(CODICE_CONTRATTO, Tipologia Contratto, IndirizzoLocale, DataStipulaContratto, DataInizioFornitura, CodiceCliente(FK), KWMassimi, TempoMassimoIntervento)
+
+3. CONTATORE
+(CODICE_ALFANUMERICO, Modello, KWMassimiErogabili, CodiceContratto(FK), DataInstallazione)
+
+4. LETTURA
+(CODICE_ALFANUMERICO(FK), MATRICOLA OPERATORE(FK), KwLettiSulContatore, Data, Ora)
+
+5. FASCIA ORARIA
+(CODICE_ALFANUMERICO, OraInizioValidità, OraFineValidità, Prezzo KWh, Consumo)
+
+6. BOLLETTA
+(NUMERO_PROGRESSIVO, CODICE_CONTRATTO, DataEmissione, PeriodoRiferimento, QuantitàCorrenteErogata, DataScadenzaPagamento, SommaDaPagare, **CorrenteConsumata, CodiceFasciaOraria(FK))     
+**
+7. OPERATORE
+(MATRICOLA, Nome, Cognome, NumeroCellulare)
+
+LAVORA IN 
+(MATRICOLA_OPERATORE, CODICE_ALFANUMERICO_AreaGeografica, DataInizio, DataFine)
+
 8. AREA GEOGRAFICA(CODICE_ALFANUMERICO)
-APPARTIENE A
-9. CITTA'(Città)
+
+9. CITTA'(Città, CODICE_ALFANIMERICO_Area_Geografica)
 
 
 
