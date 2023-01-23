@@ -1,0 +1,34 @@
+Cose da fare 
+1.	Creare le tabelle su SQLServer manualmente e con codice
+2.	Aggiungere vincoli
+3.	Valutare PK
+4.	Popolare tutte le tabelle
+5.	Fare UPDATE, INSERT, DELETE
+6.	Fare SELECT, JOIN  manipolazione tabelle
+
+
+
+
+Dubbi – 20/01/2023
+1.	Come facciamo ad inserire il vincolo: Se il contratto è di tipo business il campo Tempo massimo di intervento deve essere valorizzato altrimenti rimane vuoto?( …per i contratti di tipo business è noto il tempo massimo di intervento in seguito ad un guasto….) Tabella Contratto (TempoMassimoIntervento)
+Lo stesso vale per la tabella Cliente, TipologiaCliente  RagioneSociale | NomeReferente | CognomeReferente (…i clienti privati sono caratterizzati da nome, cognome, indirizzo e da un numero di telefono. I clienti di tipo business sono caratterizzati da ragione sociale, indirizzo, numero di telefono, nome e cognome della persona di riferimento…)
+
+2.	Quale potrebbe essere il data type migliore per il campo KW massimi erogabili?( I contatori sono univocamente identificati da un codice alfanumerico e sono caratterizzati da modello, kW massimi erogabili, data di installazione e contratto a cui si riferiscono...) Tabella Contatore
+
+3.	Quando va bene usare uniqueidentifier come chiave primaria? Quando non va bene? Esempio nella tabella Contratti il CodiceContratto è una PK (i contratti sono univocamente identificati da un codice contratto e sono caratterizzati da ...) ma il data type va messo come char(10) o uniqueidentifier? Lo stesso per la tabella Lettura (Ogni lettura `e caratterizzata dal contatore a cui si riferisce, dall’operatore che ha effettuato la lettura, dal valore in kWh letto sul contatore, dalla data e dall’ora in cui `e stata effettuata. Si tenga presente che nel corso della stessa data per ogni contatore si effettua al massimo una lettura.)
+
+
+4.	E’ meglio approccio composite key o meglio creare una nuova colonna costituita dai valori dei due campi? 
+Esempio tabella Bolletta (…Ogni bolletta è univocamente identificata da un numero progressivo all’interno dell’anno e del contratto per cui è emessa, ed è caratterizzata dal periodo temporale a cui si riferisce, dalla data di emissione, dalla data di scandenza del pagamento, dalla somma da pagare e dalla quantità totale di corrente consumata espressa in kWh…)
+
+5.	Un campo può essere FK e far parte della composite key? Esempio Tabella Bolletta, campo CodiceContratto che insieme a DataEmissione formano una composite key!!! Ma Codice Contratto è una FK!
+
+6.	Discutere la tabella Bolletta, va bene avere tre righe per ogni fascia oraria o meglio avere una colonna per ogni fascia oraria? (..Il prezzo al kWh della corrente dipende dalla fascia oraria in cui la corrente `e erogata…)
+
+
+7.	Se abbiamo un campo su una tabella in cui abbiamo messo un vincolo anche nella tabella in cui è FK va messo lo stesso vincolo? (Abbiamo visto che va rimesso)
+
+8.	Gestione delle tabelle AreaGeografica e Città in relazione ad Operatore (Le aree geografiche presso cui la ditta fornisce la corrente sono univocamente identificate da un codice alfanumerico e sono caratterizzate da un elenco di città. Ogni città appartiene al massimo ad un’area geografica. Si memorizzano i periodi di tempo (data d’inizio, data di fine) nei quali un operatore lavora presso un’area. In particolare, ogni operatore può lavorare in tempi diversi presso le stesse aree geografiche, ma anche presso aree geografiche diverse nello stesso periodo temporale.)
+
+
+9.	Tabella Contratto, campo TempoMassimoIntervento come fa l’utente a capire con quale unità di misura deve inserire il valore?
