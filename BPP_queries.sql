@@ -22,7 +22,16 @@
 --ADD CONSTRAINT CK_Privato
 --CHECK (TipologiaCliente='Privato' AND (RagioneSociale='N/A' OR RagioneSociale = NULL) AND NomeReferente = NULL AND CognomeReferente = NULL);
 
-
+--ALTER TABLE BPP_Cliente
+--ADD CONSTRAINT CK_TipologiaCliente1
+--CHECK(
+--        TipologiaCliente='Privato' AND 
+--                                 (RagioneSociale='N/A' OR RagioneSociale = NULL) AND
+--                                  (NomeReferente = NULL AND CognomeReferente = NULL) 
+--     OR TipologiaCliente='Business' AND  
+--                                  (RagioneSociale !='N/A' OR RagioneSociale != NULL) AND
+--                                  (NomeReferente != NULL AND CognomeReferente != NULL)
+--);
 
 --                                                       VINCOLI OPERATORE
 
