@@ -11,11 +11,13 @@ Cose da fare
 
 Dubbi – 20/01/2023
 1.	Come facciamo ad inserire il vincolo: Se il contratto è di tipo business il campo Tempo massimo di intervento deve essere valorizzato altrimenti rimane vuoto?( …per i contratti di tipo business è noto il tempo massimo di intervento in seguito ad un guasto….) Tabella Contratto (TempoMassimoIntervento)
-Lo stesso vale per la tabella Cliente, TipologiaCliente  RagioneSociale | NomeReferente | CognomeReferente (…i clienti privati sono caratterizzati da nome, cognome, indirizzo e da un numero di telefono. I clienti di tipo business sono caratterizzati da ragione sociale, indirizzo, numero di telefono, nome e cognome della persona di riferimento…)
+Lo stesso vale per la tabella Cliente, TipologiaCliente  RagioneSociale | NomeReferente | CognomeReferente (…i clienti privati sono caratterizzati da nome, cognome, indirizzo e da un numero di telefono. I clienti di tipo business sono caratterizzati da ragione sociale, indirizzo, numero di telefono, nome e cognome della persona di riferimento…) 
+CASE WHEN
 
 2.	Quale potrebbe essere il data type migliore per il campo KW massimi erogabili?( I contatori sono univocamente identificati da un codice alfanumerico e sono caratterizzati da modello, kW massimi erogabili, data di installazione e contratto a cui si riferiscono...) Tabella Contatore
 
-3.	Quando va bene usare uniqueidentifier come chiave primaria? Quando non va bene? Esempio nella tabella Contratti il CodiceContratto è una PK (i contratti sono univocamente identificati da un codice contratto e sono caratterizzati da ...) ma il data type va messo come char(10) o uniqueidentifier? Lo stesso per la tabella Lettura (Ogni lettura `e caratterizzata dal contatore a cui si riferisce, dall’operatore che ha effettuato la lettura, dal valore in kWh letto sul contatore, dalla data e dall’ora in cui `e stata effettuata. Si tenga presente che nel corso della stessa data per ogni contatore si effettua al massimo una lettura.)
+3.	Quando va bene usare uniqueidentifier come chiave primaria? Quando non va bene? Esempio nella tabella Contratti il CodiceContratto è una PK (i contratti sono univocamente identificati da un codice contratto e sono caratterizzati da ...) ma il data type va messo come char(10) o uniqueidentifier? Lo stesso per la tabella Lettura (Ogni lettura `e caratterizzata dal contatore a cui si riferisce, dall’operatore che ha effettuato la lettura, dal valore in kWh letto sul contatore, dalla data e dall’ora in cui `e stata effettuata. Si tenga presente che nel corso della stessa data per ogni contatore si effettua al massimo una lettura.) 
+TYPE - IDENTITY FOR PK/SURROGATE KEY LATER, FOR L1 IT'S ALRIGHT AS IT IS
 
 
 4.	E’ meglio approccio composite key o meglio creare una nuova colonna costituita dai valori dei due campi? 
