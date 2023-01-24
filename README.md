@@ -31,9 +31,9 @@ SCHEMA LOGICO RELAZIONALE
 LAVORA IN 
 (MATRICOLA_OPERATORE, CODICE_ALFANUMERICO_AreaGeografica, DataInizio, DataFine)
 
-8. AREA GEOGRAFICA(CODICE_ALFANUMERICO)
+8. AREA GEOGRAFICA(CodiceAreaGeografica, NomeAreaGeografica)
 
-9. CITTA'(Città, CODICE_ALFANIMERICO_Area_Geografica)
+9. CITTA (NomeCittà, CodiceCitta, CodiceAreaGeografica)
 
 
 
