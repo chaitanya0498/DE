@@ -34,3 +34,9 @@ Esempio tabella Bolletta (…Ogni bolletta è univocamente identificata da un nu
 
 
 9.	Tabella Contratto, campo TempoMassimoIntervento come fa l’utente a capire con quale unità di misura deve inserire il valore?
+
+Dubbi 24/01/2023
+1. Un attributo (normale, che non è PK) di una tabella può essere FK in un'altra tabella?
+2. Va bene, in L2, fare le colonne calcolate? 
+3. Tabella tempo la possiamo omettere in L1 e lasciarla solo come attributo?
+4. Tabella tempo: quando sarà tabella delle dimensioni dovrà contenere tutte le date di un determinato periodo? E come si fa per gli orari? E come si popola?
