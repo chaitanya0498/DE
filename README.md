@@ -20,11 +20,15 @@ SCHEMA LOGICO RELAZIONALE
 (CODICE_ALFANUMERICO(FK), MATRICOLA OPERATORE(FK), KwLettiSulContatore, Data, Ora)
 
 5. FASCIA ORARIA
-(CODICE_ALFANUMERICO, OraInizioValidità, OraFineValidità, Prezzo KWh, Consumo)
+(CODICEFASCIAORARIA, OraInizioValidità, OraFineValidità, Prezzo KWh)
 
 6. BOLLETTA
-(NUMERO_PROGRESSIVO, CODICE_CONTRATTO, DataEmissione, PeriodoRiferimento, QuantitàCorrenteErogata, DataScadenzaPagamento, SommaDaPagare, **CorrenteConsumata, CodiceFasciaOraria(FK))     
-**
+(NUMERO_BOLLETTA, CODICE_CONTRATTO, PERIODORIFERIMENTO, DataEmissione, DataScadenzaPagamento, SommaDaPagare)     
+
+CONTIENE
+(NUMERO_BOLLETTA, CODICE_CONTRATTO, PERIODORIFERIMENTO, CODICEFASCIAORARIA, Consumo)
+
+
 7. OPERATORE
 (MATRICOLA, Nome, Cognome, NumeroCellulare)
 
