@@ -63,14 +63,6 @@
 
 
 
---                                                           VINCOLI FASCIA ORARIA
-
---ALTER TABLE BPP_FasciaOraria
---add constraint CK_OraInizioFineValidita
---check (OraInizioValidità < OraFineValidità);
-
-
-
 
 --                                                            VINCOLI CONTATORE
 
@@ -84,10 +76,25 @@
 
 
 
+--                                                            TABELLA LETTURA
+
+-- Auto Increment PK
+--Alter table table_name modify column_name datatype(length) AUTO_INCREMENT PRIMARY KEY 
 
 
+--                                                            TABELLA CITTA                                                            
+--alter table BPP_Citta
+--ADD FOREIGN KEY (CodiceAreaGeografica) REFERENCES BPP_AreaGeografica(CodiceAreaGeografica);
 
 
-
-
+--                                                            TABELLA LAVORA_IN
+--CREATE TABLE BPP_LAVORA_IN (
+  --  MatricolaOperatore char(10) NOT NULL,
+  --  CodiceAreaGeografica char(5) NOT NULL, 
+  --  DataInizio date, 
+  --  DataFine date, 
+  --  PRIMARY KEY (MatricolaOperatore,CodiceAreaGeografica),
+  --  FOREIGN KEY (MatricolaOperatore) REFERENCES BPP_Operatore(MatricolaOperatore),
+  --  FOREIGN KEY (CodiceAreaGeografica) REFERENCES BPP_AreaGeografica(CodiceAreaGeografica) 
+);
 
