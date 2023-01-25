@@ -40,3 +40,7 @@ Dubbi 24/01/2023
 2. Va bene, in L2, fare le colonne calcolate? 
 3. Tabella tempo la possiamo omettere in L1 e lasciarla solo come attributo?
 4. Tabella tempo: quando sarà tabella delle dimensioni dovrà contenere tutte le date di un determinato periodo? E come si fa per gli orari? E come si popola?
+
+Dubbi L2 25/01/2023
+1. Riguardo a Area Geografica e Città, ha senso mantenere queste informazioni in L2 (inglobate in una differente tabella delle dimensioni), oppure conviene omettere queste informazioni e chi ne dovesse avere bisogno va a recuperarle in L1? 
+2. Se stessimo facendo questo lavoro per un cliente, questo avrebbe accesso alle tabelle L1 e L2? Oppure avrebbe solo accesso al "lavoro finito"?
