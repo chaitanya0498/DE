@@ -52,6 +52,7 @@ Dubbi L2 25/01/2023
 DUBBI L2 26/01/2023
 1. Serve mantenere contstaint NOT NULL di un attributo L1 anche quando viene portata in L2 e non è più la chiave primaria? 
 
+2. Quando creiamo una tabella vanno impostati i valori di default di tutti i campi?
 
 
 
