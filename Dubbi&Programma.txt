@@ -46,3 +46,23 @@ Dubbi L2 25/01/2023
 2. Se stessimo facendo questo lavoro per un cliente, questo avrebbe accesso alle tabelle L1 e L2? Oppure avrebbe solo accesso al "lavoro finito"?
 3. Come gestiamo all'interno delle tabelle delle dimensioni gli attributi che variano nel tempo? Come ad esempio l'area geografica in cui un operatore lavora? (Visto che sappiamo anche che un operatore puù lavorare in aree diverse nello stesso periodo di tempo). Ci conviene lasciarli in una dimensione separata? Eliminarli del tutto? 
 4. Cosa si intende esattamente quando si dice che le tabelle delle dimensioni devono essere indipendenti? Nel nostro caso possiamo avere due dimensioni separate per cliente e contratto? (Ragionandoci un cliente esiste solo dal momento in cui stipula un contratto e un contratto non esiste senza un cliente che lo stipula)
+
+
+
+DUBBI L2 26/01/2023
+1. Serve mantenere contstaint NOT NULL di un attributo L1 anche quando viene portata in L2 e non è più la chiave primaria? 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
