@@ -43,3 +43,18 @@ create table BPP_L2_Contratto (
 	KWMassimi decimal(4,1),
 	TempoMassimoIntervento decimal(5,2)
 	)
+
+
+-- TABELLA DIMENSIONE TEMPO
+
+create table BPP_L2_Tempo (
+ChiaveTempo int identity(1,1) primary key not null, 
+[Data] date,
+Anno char(4),
+Mese char(2),
+Giorno char(2),
+[DescrizioneData] varchar(30),
+GiornoSettimana varchar(20),
+DescrizioneMeseAnno varchar(20),
+[Weekday/Weekend] char(7)
+)
