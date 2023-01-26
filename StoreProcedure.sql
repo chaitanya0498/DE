@@ -1,4 +1,5 @@
-CONTATORE
+-- TABELLA DIMENSIONE CONTATORE
+
 create table BPP_L2_Contatore (
 ChiaveContatore int identity(1,1) primary key not null,
 CodiceContatore char(10) not null,
@@ -14,7 +15,8 @@ CognomeOperatore varchar(50),
 NumeroTelefonoOperatore char(10)
 )
 
-CLIENTE
+
+-- TABELLA DIMENSIONE CLIENTE
 
 create table [BPP_L2_Cliente](
     [ChiaveCliente] [int] IDENTITY(1,1) PRIMARY KEY NOT NULL,
@@ -29,3 +31,15 @@ create table [BPP_L2_Cliente](
     [CognomePersonaRiferimento] [varchar](50)
 );
 
+-- TABELLA DIMENSIONE CONTRATTO
+
+create table BPP_L2_Contratto ( 
+	ChiaveContratto int identity(1,1) primary key not null,
+	CodiceContratto char(10),
+	TipologiaContratto varchar(30),
+	IndirizzoLocale varchar(50),
+	DataInizioFornitura date,
+	DataStipulaContratto date,
+	KWMassimi decimal(4,1),
+	TempoMassimoIntervento decimal(5,2)
+	)
