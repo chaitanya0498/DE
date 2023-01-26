@@ -58,3 +58,26 @@ GiornoSettimana varchar(20),
 DescrizioneMeseAnno varchar(20),
 [Weekday/Weekend] char(7)
 )
+
+
+-- TABELLA DEI FATTI BOLLETTA
+create table BPP_L2_Bolletta (
+ChiaveTempo int foreign key references BPP_L2_Tempo(ChiaveTempo),
+ChiaveCliente int foreign key references BPP_L2_Cliente(ChiaveCliente),
+ChiaveContratto int foreign key references BPP_L2_Contratto(ChiaveContratto),
+ChiaveContatore int foreign key references BPP_L2_Contatore(ChiaveContatore),
+DataEmissione date,
+PeriodoRiferimento varchar(20),
+DataScadenzaPagamento date, 
+ConsumoFascia1 decimal(6,2),
+ConsumoFascia2 decimal(6,2),
+ConsumoFascia3 decimal(6,2),
+PrezzoKWhFascia1 decimal(4,3),
+PrezzoKWhFascia2 decimal(4,3),
+PrezzoKWhFascia3 decimal(4,3),
+SommaPagare1 decimal(6,2),
+SommaPagare2 decimal(6,2),
+SommaPagare3 decimal(6,2),
+TotalePagare decimal(8,2)
+)
+
