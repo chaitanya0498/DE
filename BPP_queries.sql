@@ -98,3 +98,29 @@
   --  FOREIGN KEY (CodiceAreaGeografica) REFERENCES BPP_AreaGeografica(CodiceAreaGeografica) 
 );
 
+
+
+--														   TABELLA BOLLETTA
+/*CREATE TABLE [dbo].[BPP_Contiene](
+    [NumeroBolletta] [int] IDENTITY(1,1) NOT NULL,
+    [CodiceContratto] [char](10) NOT NULL,
+    [PeriodoRiferimento] [varchar](20) NOT NULL,
+    [CodiceFasciaOraria] [char](1) NOT NULL,
+    [Consumo] [decimal](6,2) NULL,
+    PRIMARY KEY(NumeroBolletta, CodiceContratto,PeriodoRiferimento,CodiceFasciaOraria) ,
+    FOREIGN KEY(NumeroBolletta, CodiceContratto,PeriodoRiferimento) REFERENCES BPP_Bolletta(NumeroBolletta, CodiceContratto,PeriodoRiferimento),
+    FOREIGN KEY(CodiceFasciaOraria) REFERENCES BPP_FasciaOraria(CodiceFasciaOraria)
+);   
+*/
+
+
+/*                                                   TABELLA BOLLETTA
+
+SELECT Co.CodiceContratto, L.DataOraLettura, Co.CodiceContatore
+from BPP_Contratto as C, BPP_Lettura AS L, BPP_Contatore as Co
+where L.CodiceContatore = Co.CodiceContatore 
+and Co.CodiceContratto = C.CodiceContratto
+
+*/
+
+
