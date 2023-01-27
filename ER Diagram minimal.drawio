@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-27T09:02:17.801Z" agent="5.0 (Windows)" etag="ey0eohnVDaKsOwo1Yr_m" version="20.8.5" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-01-27T09:08:17.754Z" agent="5.0 (Windows)" etag="27LYc51-KWFsHMiF6lIG" version="20.8.5" type="github" pages="3">
   <diagram id="OaHjyGjdNP-GCPTDcom8" name="Page-1">
     <mxGraphModel dx="1085" dy="990" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1132,7 +1132,7 @@
             <mxPoint x="410" y="170" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="MkPqTFWNN01vZXdFBFYq-23" value="Cliente" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-23" value="L2_DIM_Cliente" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
           <mxGeometry x="590" y="60" width="270" height="200" as="geometry" />
         </mxCell>
         <mxCell id="MkPqTFWNN01vZXdFBFYq-24" value="Chiave Cliente (SK)&#xa;Codice Cliente&#xa;Tipologia Cliente&#xa;Nome Cliente&#xa;Cognome Cliente&#xa;Indirizzo - type1&#xa;Cognome Persona Riferimento (ragione sociale)&#xa;data inizio, data fine, &#xa;flag attuale/ultimo&#xa;professione (storicizzato) type2" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-23">
@@ -1144,7 +1144,7 @@
             <mxPoint x="654" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="MkPqTFWNN01vZXdFBFYq-26" value="Contratto" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-26" value="L2_DIM_Contratto" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
           <mxGeometry x="600" y="330" width="160" height="160" as="geometry" />
         </mxCell>
         <mxCell id="MkPqTFWNN01vZXdFBFYq-27" value="" style="endArrow=none;html=1;rounded=0;entryX=-0.008;entryY=0.349;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="MkPqTFWNN01vZXdFBFYq-26" target="MkPqTFWNN01vZXdFBFYq-28">
@@ -1156,7 +1156,7 @@
         <mxCell id="MkPqTFWNN01vZXdFBFYq-28" value="Chiave Contratto (SK)&#xa;Codice Contratto&#xa;Tipologia Contratto&#xa;Data inizio fornitura&#xa;KW massimi&#xa;Tempo massimo intervento" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-26">
           <mxGeometry y="30" width="160" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="MkPqTFWNN01vZXdFBFYq-29" value="Contatore" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-29" value="L2_DIM_Contatore" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
           <mxGeometry x="90" y="260" width="160" height="110" as="geometry" />
         </mxCell>
         <mxCell id="MkPqTFWNN01vZXdFBFYq-30" value="Chiave Contatore (SK)&#xa;Ultimi KW letti&#xa;Data lettura ultimi KW&#xa;Nome area geografica&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-29">
@@ -1168,7 +1168,7 @@
             <mxPoint x="330" y="333" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="MkPqTFWNN01vZXdFBFYq-32" value="Operatore" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-32" value="L2_DIM_Operatore" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
           <mxGeometry x="90" y="410" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="MkPqTFWNN01vZXdFBFYq-33" value="Matricola operatore&#xa;Nome Operatore&#xa;Cognome Operatore&#xa;Numero Telefono operatore&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-32">
