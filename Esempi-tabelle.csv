@@ -1,4 +1,5 @@
-﻿Chiave Cliente;Codice Cliente;Tipologia Cliente;Nome ;Cognome ;Indirizzo;Ragione Sociale;Professione;Data inizio validità;Data fine validità;FLAG ATTUALE(Y/N)
+﻿Tabella Cliente;;;;;;;;;;
+Chiave Cliente;Codice Cliente;Tipologia Cliente;Nome ;Cognome ;Indirizzo;Ragione Sociale;Professione;Data inizio validità;Data fine validità;FLAG ATTUALE(Y/N)
 0;0;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL
 1;1;Privato;Letizia;Palumbo;Via Tevere 14;NULL;STUDENTE;01/01/2020;31/12/2022;N 
 2;1;Privato;Letizia;Palumbo;Via Tevere 14;NULL;CONSULENTE;01/01/2023;20/01/2023;N
