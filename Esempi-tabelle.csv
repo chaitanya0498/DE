@@ -1,17 +1,27 @@
-﻿Chaive Cliente;Codice Cliente;Tipologia Cliente;Nome ;Cognome ;Indirizzo;Ragione Sociale;Professione;Data inizio validità;Data fine validità;FLAG ATTUALE(Y/N);;;;;;
-0;0000000000;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;;;;;;
-1;0000000001;Privato;Letizia;Palumbo;Via Tevere 14;NULL;STUDENTE;01/01/2020;31/12/2022;N ;;;;;;
-2;0000000001;Privato;Letizia;Palumbo;Via Tevere 14;NULL;CONSULENTE;01/01/2023;20/01/2023;N;;;;;;
-3;0000000002;BUSINESS;NULL;Verdi;Via Corridoni ;ALTEN ITALIA;NULL;NULL;NULL;NULL;;;;;;
-4;0000000001;Privato;Letizia;Palumbo;Via Tevere 14;NULL;SEGRETARIA;21/01/2023;NULL;Y;;;;;;
-;;;;;;;;;;;;;;;;
-;;N.B.;;;;;;;;;;;;;;
-;;"La prima volta che si registra un cliente la data di inizio validità della professione sarà = data inizio contratto; se poi cambia la professione la data di inizio validità sarà uguale alla data di fine validità precedente +1!";;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;
-Chiave Tempo;Chiave Operatore;Chiave Cliente;Chiave Contratto;Chiave Contatore;Data Emissione;Periodo di Riferimento;Data Scadenza Pagamento;Consumo Fascia 1;Consumo Fascia 2;Consumo Fascia 3;Prezzo KWh fascia 1;Prezzo KWh fascia 2;Prezzo KWh fascia 3;Totale da pagare;Codice Lettura(DD);Professione Cliente attuale
-1;1;1;1;1;21/01/2020;DICEMBRE 2019;21/02/2020;5;6;7;0,378;0,354;0,329;6,317;0000000001;STUDENTE
+﻿Chiave Cliente;Codice Cliente;Tipologia Cliente;Nome ;Cognome ;Indirizzo;Ragione Sociale;Professione;Data inizio validità;Data fine validità;FLAG ATTUALE(Y/N)
+0;0;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL
+1;1;Privato;Letizia;Palumbo;Via Tevere 14;NULL;STUDENTE;01/01/2020;31/12/2022;N 
+2;1;Privato;Letizia;Palumbo;Via Tevere 14;NULL;CONSULENTE;01/01/2023;20/01/2023;N
+3;2;BUSINESS;NULL;Verdi;Via Corridoni ;ALTEN ITALIA;NULL;NULL;NULL;NULL
+4;1;Privato;Letizia;Palumbo;Via Tevere 14;NULL;SEGRETARIA;21/01/2023;NULL;Y
+;;;;;;;;;;
+N.B.;;;;;;;;;;
+"La prima volta che si registra un cliente la data di inizio validità della professione sarà = data inizio contratto; se poi cambia la professione la data di inizio validità sarà uguale alla data di fine validità precedente +1!";;;;;;;;;;
+Quando si inserisce il record bolletta bisognerà vedere l'ultima professione del codice cliente 'attiva';;;;;;;;;;
+;;;;;;;;;;
+Tabella Contatore;;;;;;;;;;
+Chiave Contatore(SK);Codice Contatore;KW Letti (ultimi);Data Lettura(ultima);Nome Area Geografica;;;;;;
+0;0000000000;NULL;NULL;NULL;;QUI VA FATTO DELETE+INSERT;1. Si deve inserire un nuovo contatore;;;
+1;M-12345678;6,2;16/12/2021;TORINO;;;2. Nuova lettura ;;;
+2;M-12345679;10;16/12/2021;EMILIA ROMAGNA;;;3. Bisogna cambiare il valore di un campo perché è stato inserito male;;;
+3;M-12345680;12;17/12/2021;EMILIA ROMAGNA;Inserito un nuovo contatore;;;;;
+;;;;;;;;;;
+N.B.;;;;;;;;;;
+Bisogna differenziare i contatori da 3 KW da quelli da 6 KW ;;;;;;;;;;
+;;;;;;;;;;
+Tabella Operatore;;;;;;;;;;
+Chiave Operatore(SK);Matricola Operatore;Nome Operatore;Cognome Operatore;Numero Telefono;;;;;;
+0;0000000000;NULL;NULL;NULL;;;;;;
+1;0000000001;Mario;Bianchi;3807689468;;;;;;
+2;0000000002;Angelo;Rossi;3455678902;;;;;;
+ ; ;;;;;;;;;
