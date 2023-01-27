@@ -52,13 +52,44 @@ Dubbi L2 25/01/2023
 DUBBI L2 26/01/2023
 1. Serve mantenere contstaint NOT NULL di un attributo L1 anche quando viene portata in L2 e non è più la chiave primaria? 
 
-2. Quando creiamo una tabella vanno impostati i valori di default di tutti i campi?
+2. Quando creiamo una tabella vanno impostati i valori di default di tutti i campi? -no
+
+3. Tabella L2_Cliente - abbiamo impostato IDENTITY(0,1) ma dopo l'inserimento dei dati, le tuple iniziano da 1. 
+- try DELETE where >1
+
+4. Come viene popolata la tabella dei fatti? Usando Join, dalle tabelle dimensioni? O dalle tabelle L1
 
 
 
+1-aggiungere constraint not null anche in L2
+
+2-truncate tabella dove le tuple partano non da zero
+
+3-poplare tabella dim_tempo con date 1-2 anni in avanti - non inserire all'interno dell'stored procedure, popolare da excel e lasciare invariata
+
+4-creare tabella dim_operatore
+
+5-con FACT, 1,2 annni avanti
+
+6-caricate tabelle operatore, contatore, contratto - funzionalità tipo 1 - truncate and insert nel caso dei aggionramenti 
+
+7-dim_cliente è tipo 2 - conservare dati storici
+
+chiave naturale da codice cliente è sacra
+learn about natural key
+
+1. update all attributes of type 1
+2. update and remove current record, insert
+non li cancelliamo mai.
+
+alla fine popolare tabella FACT Bolletta
 
 
+# if is null, metti 1
 
+
+8-One stored procedure should be capable of loading all data into the fact table
+in the end, an update scipt
 
 
 
