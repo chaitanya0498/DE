@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-26T15:41:36.311Z" agent="5.0 (Windows)" etag="WbChvdOBJ9JLvgqjS_Ic" version="20.8.5" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-01-27T08:25:08.205Z" agent="5.0 (Windows)" etag="kpX6sqOy6C1Tivt6g7Lr" version="20.8.5" type="github" pages="3">
   <diagram id="OaHjyGjdNP-GCPTDcom8" name="Page-1">
-    <mxGraphModel dx="1758" dy="1261" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1085" dy="990" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -946,7 +946,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="TtdAGoWYVx0oQgbGPtCT" name="Pagina-2">
-    <mxGraphModel dx="1206" dy="590" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1085" dy="590" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1041,15 +1041,140 @@
           <mxGeometry y="30" width="160" height="130" as="geometry" />
         </mxCell>
         <mxCell id="zR9AkgcWk_SplZUq-Iif-51" value="Contatore" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
-          <mxGeometry x="90" y="410" width="160" height="270" as="geometry" />
+          <mxGeometry x="90" y="390" width="160" height="270" as="geometry" />
         </mxCell>
-        <mxCell id="zR9AkgcWk_SplZUq-Iif-52" value="Chiave Contatore (SK)&#xa;Codice Contatore&#xa;Modello&#xa;KW massimi erogabili&#xa;Data installazione&#xa;Codice Lettura&#xa;KW letti&#xa;Data lettura&#xa;Matricola operatore&#xa;Nome Operatore-&gt;FACT&#xa;Cognome Operatore&gt;FACT&#xa;Numero Telefono operatore&#xa;(Codice Area Geografica)&#xa;(Nome area geografica)&#xa;(Codice città)&#xa;(Nome città)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="zR9AkgcWk_SplZUq-Iif-51" vertex="1">
+        <mxCell id="zR9AkgcWk_SplZUq-Iif-52" value="Chiave Contatore (SK)&#xa;Codice Contatore&#xa;Modello&#xa;KW massimi erogabili&#xa;Data installazione&#xa;Codice Lettura -&gt; Fact&#xa;KW letti (Consumi in F)&#xa;Data lettura&#xa;Matricola operatore-&gt; +D&#xa;Nome Operatore-&gt; +D&#xa;Cognome Operatore&gt; +D&#xa;Numero Telefono operatore  +D&#xa;(Codice Area Geografica)&#xa;(Nome area geografica)&#xa;(Codice città)&#xa;(Nome città)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="zR9AkgcWk_SplZUq-Iif-51" vertex="1">
           <mxGeometry y="30" width="160" height="240" as="geometry" />
         </mxCell>
         <mxCell id="zR9AkgcWk_SplZUq-Iif-53" value="" style="endArrow=none;html=1;rounded=0;exitX=1.004;exitY=0.543;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.011;entryY=0.982;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="zR9AkgcWk_SplZUq-Iif-52" target="zR9AkgcWk_SplZUq-Iif-28" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="174" y="544.41" as="sourcePoint" />
             <mxPoint x="334" y="544.41" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bBOMno06F9_-9BjDVsVX-1" value="Operatore" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="300" y="700" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="bBOMno06F9_-9BjDVsVX-2" value="+Attribute1&#xa;+Attribute2&#xa;+Attribute3" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="bBOMno06F9_-9BjDVsVX-1">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Copy of Pagina-2" id="06k_hXyru1FPZO6y9ls8">
+    <mxGraphModel dx="682" dy="310" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-0" />
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-1" parent="MkPqTFWNN01vZXdFBFYq-0" />
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-2" value="L2_FACT_Bolletta" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
+          <mxGeometry x="334" y="104" width="160" height="422" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-3" value="Chiave Tempo (FK)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vDcjD59WCFF6cKzVsAc6-4" value="Chiave Operatore (FK)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+          <mxGeometry y="56" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-4" value="Chiave Cliente (FK)&#xa;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+          <mxGeometry y="80" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-5" value="Chiave Contratto (FK)&#xa;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+          <mxGeometry y="110" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-6" value="Chiave Contatore (FK)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+          <mxGeometry y="134" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-7" value="Data Emissione&#xa;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+          <mxGeometry y="158" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-8" value="Periodo di riferimento" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+          <mxGeometry y="182" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-9" value="Data scadenza pagamento" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+          <mxGeometry y="206" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-10" value="Consumo fascia 1" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+          <mxGeometry y="230" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-11" value="Consumo fascia 2" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+          <mxGeometry y="254" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-12" value="Consumo fascia 3" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+          <mxGeometry y="278" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-13" value="Prezzo KWh fascia 1" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+          <mxGeometry y="302" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-14" value="Prezzo Kwh fascia 2" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+          <mxGeometry y="326" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-15" value="Prezzo KWh fascia 3" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+          <mxGeometry y="350" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-19" value="Totale da pagare" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+          <mxGeometry y="374" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="vDcjD59WCFF6cKzVsAc6-0" value="Codice Lettura " style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+          <mxGeometry y="398" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-20" value="L2_DIM_Tempo" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
+          <mxGeometry x="90" y="60" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-21" value="Chiave Tempo (SK)&#xa;Data&#xa;Anno&#xa;Mese&#xa;Giorno&#xa;Descrizione data&#xa;Giorno della settimana&#xa;Descrizione mese-anno&#xa;Weekday(o weekend)&#xa;&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-20">
+          <mxGeometry y="30" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-22" value="" style="endArrow=none;html=1;rounded=0;entryX=0.007;entryY=-0.236;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="MkPqTFWNN01vZXdFBFYq-1" target="MkPqTFWNN01vZXdFBFYq-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="170" as="sourcePoint" />
+            <mxPoint x="410" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-23" value="Cliente" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
+          <mxGeometry x="590" y="60" width="270" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-24" value="Chiave Cliente (SK)&#xa;Codice Cliente&#xa;Tipologia Cliente&#xa;Nome Cliente&#xa;Cognome Cliente&#xa;Indirizzo - type1&#xa;Cognome Persona Riferimento (ragione sociale)&#xa;data inizio, data fine, &#xa;flag attuale/ultimo&#xa;professione (storicizzato) type2" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-23">
+          <mxGeometry y="30" width="270" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-25" value="" style="endArrow=none;html=1;rounded=0;entryX=-0.017;entryY=0.558;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="MkPqTFWNN01vZXdFBFYq-1" target="MkPqTFWNN01vZXdFBFYq-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="494" y="270" as="sourcePoint" />
+            <mxPoint x="654" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-26" value="Contratto" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
+          <mxGeometry x="600" y="410" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-27" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="MkPqTFWNN01vZXdFBFYq-26" target="MkPqTFWNN01vZXdFBFYq-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-106" y="50" as="sourcePoint" />
+            <mxPoint x="54" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-28" value="Chiave Contratto (SK)&#xa;Codice Contratto&#xa;Tipologia Contratto&#xa;Data inizio fornitura&#xa;KW massimi&#xa;Tempo massimo intervento" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-26">
+          <mxGeometry y="30" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-29" value="Contatore" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
+          <mxGeometry x="90" y="260" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-30" value="Chiave Contatore (SK)&#xa;Ultimi KW letti&#xa;Data lettura ultimi KW&#xa;Nome area geografica&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-29">
+          <mxGeometry y="30" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-31" value="" style="endArrow=none;html=1;rounded=0;exitX=1.004;exitY=0.543;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.011;entryY=0.982;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="MkPqTFWNN01vZXdFBFYq-1" source="MkPqTFWNN01vZXdFBFYq-30" target="MkPqTFWNN01vZXdFBFYq-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="174" y="544.41" as="sourcePoint" />
+            <mxPoint x="334" y="544.41" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-32" value="Operatore" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
+          <mxGeometry x="90" y="410" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-33" value="Matricola operatore&#xa;Nome Operatore&#xa;Cognome Operatore&#xa;Numero Telefono operatore&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-32">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vDcjD59WCFF6cKzVsAc6-3" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="MkPqTFWNN01vZXdFBFYq-1" source="MkPqTFWNN01vZXdFBFYq-33" target="MkPqTFWNN01vZXdFBFYq-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="252.39999999999986" y="422.93999999999994" as="sourcePoint" />
+            <mxPoint x="334" y="557.068" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
