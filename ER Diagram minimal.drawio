@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-27T08:54:36.480Z" agent="5.0 (Windows)" etag="UFwM-Tuv2zJzdi9ClVrB" version="20.8.5" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-01-27T09:02:17.801Z" agent="5.0 (Windows)" etag="ey0eohnVDaKsOwo1Yr_m" version="20.8.5" type="github" pages="3">
   <diagram id="OaHjyGjdNP-GCPTDcom8" name="Page-1">
     <mxGraphModel dx="1085" dy="990" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -946,7 +946,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="TtdAGoWYVx0oQgbGPtCT" name="Pagina-2">
-    <mxGraphModel dx="1085" dy="590" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1103" dy="546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1067,7 +1067,7 @@
         <mxCell id="MkPqTFWNN01vZXdFBFYq-0" />
         <mxCell id="MkPqTFWNN01vZXdFBFYq-1" parent="MkPqTFWNN01vZXdFBFYq-0" />
         <mxCell id="MkPqTFWNN01vZXdFBFYq-2" value="L2_FACT_Bolletta" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
-          <mxGeometry x="334" y="104" width="160" height="422" as="geometry" />
+          <mxGeometry x="334" y="104" width="160" height="446" as="geometry" />
         </mxCell>
         <mxCell id="MkPqTFWNN01vZXdFBFYq-3" value="Chiave Tempo (FK)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
           <mxGeometry y="26" width="160" height="30" as="geometry" />
@@ -1114,8 +1114,11 @@
         <mxCell id="MkPqTFWNN01vZXdFBFYq-19" value="Totale da pagare" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
           <mxGeometry y="374" width="160" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="vDcjD59WCFF6cKzVsAc6-0" value="Codice Lettura " style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+        <mxCell id="vDcjD59WCFF6cKzVsAc6-0" value="Codice Lettura?" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
           <mxGeometry y="398" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Knd_ywgOaqIi8t9F18qc-0" value="Professione Cliente Attuale" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-2">
+          <mxGeometry y="422" width="160" height="24" as="geometry" />
         </mxCell>
         <mxCell id="MkPqTFWNN01vZXdFBFYq-20" value="L2_DIM_Tempo" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
           <mxGeometry x="90" y="60" width="160" height="180" as="geometry" />
