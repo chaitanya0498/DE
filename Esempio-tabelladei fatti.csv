@@ -1,0 +1,17 @@
+﻿Chaive Cliente;Codice Cliente;Tipologia Cliente;Nome ;Cognome ;Indirizzo;Ragione Sociale;Professione;Data inizio validità;Data fine validità;FLAG ATTUALE(Y/N);;;;;;
+0;0000000000;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;;;;;;
+1;0000000001;Privato;Letizia;Palumbo;Via Tevere 14;NULL;STUDENTE;01/01/2020;31/12/2022;N ;;;;;;
+2;0000000001;Privato;Letizia;Palumbo;Via Tevere 14;NULL;CONSULENTE;01/01/2023;20/01/2023;N;;;;;;
+3;0000000002;BUSINESS;NULL;Verdi;Via Corridoni ;ALTEN ITALIA;NULL;NULL;NULL;NULL;;;;;;
+4;0000000001;Privato;Letizia;Palumbo;Via Tevere 14;NULL;SEGRETARIA;21/01/2023;NULL;Y;;;;;;
+;;;;;;;;;;;;;;;;
+;;N.B.;;;;;;;;;;;;;;
+;;"La prima volta che si registra un cliente la data di inizio validità della professione sarà = data inizio contratto; se poi cambia la professione la data di inizio validità sarà uguale alla data di fine validità precedente +1!";;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+Chiave Tempo;Chiave Operatore;Chiave Cliente;Chiave Contratto;Chiave Contatore;Data Emissione;Periodo di Riferimento;Data Scadenza Pagamento;Consumo Fascia 1;Consumo Fascia 2;Consumo Fascia 3;Prezzo KWh fascia 1;Prezzo KWh fascia 2;Prezzo KWh fascia 3;Totale da pagare;Codice Lettura(DD);Professione Cliente attuale
+1;1;1;1;1;21/01/2020;DICEMBRE 2019;21/02/2020;5;6;7;0,378;0,354;0,329;6,317;0000000001;STUDENTE
