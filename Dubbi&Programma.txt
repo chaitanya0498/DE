@@ -76,7 +76,6 @@ DUBBI L2 26/01/2023
 7-dim_cliente è tipo 2 - conservare dati storici
 
 chiave naturale da codice cliente è sacra
-learn about natural key
 
 1. update all attributes of type 1
 2. update and remove current record, insert
