@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-27T09:08:17.754Z" agent="5.0 (Windows)" etag="27LYc51-KWFsHMiF6lIG" version="20.8.5" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-01-27T15:55:14.947Z" agent="5.0 (Windows)" etag="CPu31MKcdQYcvE6HA-st" version="20.8.5" type="github" pages="3">
   <diagram id="OaHjyGjdNP-GCPTDcom8" name="Page-1">
     <mxGraphModel dx="1085" dy="990" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1062,7 +1062,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Copy of Pagina-2" id="06k_hXyru1FPZO6y9ls8">
-    <mxGraphModel dx="1103" dy="546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1223" dy="441" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="MkPqTFWNN01vZXdFBFYq-0" />
         <mxCell id="MkPqTFWNN01vZXdFBFYq-1" parent="MkPqTFWNN01vZXdFBFYq-0" />
@@ -1157,10 +1157,10 @@
           <mxGeometry y="30" width="160" height="130" as="geometry" />
         </mxCell>
         <mxCell id="MkPqTFWNN01vZXdFBFYq-29" value="L2_DIM_Contatore" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
-          <mxGeometry x="90" y="260" width="160" height="110" as="geometry" />
+          <mxGeometry x="90" y="260" width="160" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="MkPqTFWNN01vZXdFBFYq-30" value="Chiave Contatore (SK)&#xa;Ultimi KW letti&#xa;Data lettura ultimi KW&#xa;Nome area geografica&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-29">
-          <mxGeometry y="30" width="160" height="80" as="geometry" />
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-30" value="Chiave Contatore (SK)&#xa;Codice Contatore&#xa;Ultimi KW letti &#xa; Data lettura ultimi KW&#xa;Nome area geografica" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-29">
+          <mxGeometry y="30" width="160" height="100" as="geometry" />
         </mxCell>
         <mxCell id="MkPqTFWNN01vZXdFBFYq-31" value="" style="endArrow=none;html=1;rounded=0;exitX=1.004;exitY=0.543;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.033;entryY=0.024;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="MkPqTFWNN01vZXdFBFYq-1" source="MkPqTFWNN01vZXdFBFYq-30" target="MkPqTFWNN01vZXdFBFYq-10">
           <mxGeometry relative="1" as="geometry">
@@ -1169,10 +1169,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="MkPqTFWNN01vZXdFBFYq-32" value="L2_DIM_Operatore" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-1">
-          <mxGeometry x="90" y="410" width="160" height="120" as="geometry" />
+          <mxGeometry x="90" y="410" width="160" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="MkPqTFWNN01vZXdFBFYq-33" value="Matricola operatore&#xa;Nome Operatore&#xa;Cognome Operatore&#xa;Numero Telefono operatore&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-32">
-          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        <mxCell id="MkPqTFWNN01vZXdFBFYq-33" value="Chiave Operatore&#xa;Matricola operatore&#xa;Nome Operatore&#xa; Cognome Operatore &#xa;&#xa;Numero Telefono operatore&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="MkPqTFWNN01vZXdFBFYq-32">
+          <mxGeometry y="30" width="160" height="130" as="geometry" />
         </mxCell>
         <mxCell id="vDcjD59WCFF6cKzVsAc6-3" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="MkPqTFWNN01vZXdFBFYq-1" source="MkPqTFWNN01vZXdFBFYq-33" target="MkPqTFWNN01vZXdFBFYq-14">
           <mxGeometry relative="1" as="geometry">
