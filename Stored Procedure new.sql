@@ -15,13 +15,13 @@ CREATE PROCEDURE dbo.BPP_L2_createschema_societa_elettrica
 AS
 BEGIN
  
-	/*drop table dbo.BPP_L2_dim_cliente 
+	drop table dbo.BPP_L2_dim_cliente 
 	drop table dbo.BPP_L2_dim_contatore 
 	drop table dbo.BPP_L2_dim_contratto 
 	drop table dbo.BPP_L2_dim_operatore
 	drop table dbo.BPP_L2_dim_data
 	drop table dbo.BPP_L2_fact_bolletta
-	*/
+	
     -- SET NOCOUNT ON added to prevent extra result sets from
     -- interfering with SELECT statements.
     SET NOCOUNT ON
@@ -71,21 +71,21 @@ BEGIN
 	NumeroTelefonoOperatore char(10)
 	)
 
-	create table dbo.BPP_L2_dim_data(
-	ChiaveData int IDENTITY(0,1) primary key NOT NULL,
-	[Data] date NULL,
-	Anno char(4) NULL,
-	Mese char(2) NULL,
-	Giorno char(2) NULL,
-	DescrizioneData varchar(30) NULL,
-	GiornoSettimana varchar(20) NULL,
-	DescrizioneMeseAnno varchar(20) NULL,
-	[Weekday/Weekend] char(7) NULL
+	create table dbo.BPP_L2_dim_tempo(
+	ChiaveTempo int IDENTITY(0,1) primary key NOT NULL,
+	[Data] date,
+	Anno char(4),
+	Mese char(2),
+	Giorno char(2),
+	DescrizioneData varchar(30),
+	GiornoSettimana varchar(20),
+	DescrizioneMeseAnno varchar(20),
+	[Weekday/Weekend] char(7)
 	)
 	
 
 	create table dbo.BPP_L2_fact_bolletta(
-	ChiaveData int foreign key references dbo.BPP_L2_dim_data(ChiaveData),
+	ChiaveTempo int foreign key references dbo.BPP_L2_dim_tempo(ChiaveTempo),
 	ChiaveCliente int foreign key references dbo.BPP_L2_dim_cliente(ChiaveCliente),
 	ChiaveContratto int foreign key references dbo.BPP_L2_dim_contratto(ChiaveContratto),
 	ChiaveContatore int foreign key references dbo.BPP_L2_dim_contatore(ChiaveContatore),
@@ -102,7 +102,7 @@ BEGIN
 	PrezzoKWhFascia3 decimal(4,3),
 	TotaleDaPagare decimal(8,2),
 	ProfessioneClienteAttuale varchar(50),
-	primary key (ChiaveData,ChiaveCliente,ChiaveContratto,ChiaveContatore,ChiaveOperatore)
+	primary key (ChiaveTempo,ChiaveCliente,ChiaveContratto,ChiaveContatore,ChiaveOperatore)
 	)
 
 
