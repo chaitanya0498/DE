@@ -100,9 +100,15 @@ Schema stella fatta
 
 fatto:
 -Creare le tabelle
--Creare la StoredProcedure
+-Creare la StoredProcedure per fase 1 - creazione tabelle
 -Popolare tabella dim_tempo
+-Creare la StoredProcedure per fase 2 - popolamento tabelle (da completare)
+- Popolare tabella Operatore, Contratto
 
+Da fare:
+- popolare Contratto
+-popolare tabella Cliente L1 inserendo TIMESTAMP, poi poplare L2 usando join (alla fine)
+- popolare tabela dei fatti 
 
 
 
