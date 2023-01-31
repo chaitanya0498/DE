@@ -1,30 +1,24 @@
-﻿Tabella Cliente;;;;;;;;;;
-Chiave Cliente;Codice Cliente;Tipologia Cliente;Nome ;Cognome ;Indirizzo;Ragione Sociale;Professione;Data inizio validità;Data fine validità;FLAG ATTUALE(Y/N)
-0;0;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL
-1;1;Privato;Letizia;Palumbo;Via Tevere 14;NULL;STUDENTE;01/01/2020;31/12/2022;N 
-2;1;Privato;Letizia;Palumbo;Via Tevere 14;NULL;CONSULENTE;01/01/2023;20/01/2023;N
-3;2;BUSINESS;NULL;Verdi;Via Corridoni ;ALTEN ITALIA;NULL;NULL;NULL;NULL
-4;1;Privato;Letizia;Palumbo;Via Tevere 14;NULL;SEGRETARIA;21/01/2023;NULL;Y
-;;;;;;;;;;
-N.B.;;;;;;;;;;
-"La prima volta che si registra un cliente la data di inizio validità della professione sarà = data inizio contratto; se poi cambia la professione la data di inizio validità sarà uguale alla data di fine validità precedente +1!";;;;;;;;;;
-Quando si inserisce il record bolletta bisognerà vedere l'ultima professione del codice cliente 'attiva';;;;;;;;;;
-;;;;;;;;;;
-Tabella Contatore;;;;;;;;;;
-Chiave Contatore(SK);Codice Contatore;KW Letti (ultimi);Data Lettura(ultima);Nome Area Geografica;;;;;;
-0;0;NULL;NULL;NULL;; ; ;;;
-1;M-12345678;6,2;16/12/2021;TORINO;;; ;;;
-2;M-12345679;10;16/12/2021;EMILIA ROMAGNA;;; ;;;
-3;M-12345680;12;17/12/2021;EMILIA ROMAGNA;Inserito un nuovo contatore;;;;;
-;;;;;;;;;;
-N.B.;;;;;;;;;;
-Bisogna differenziare i contatori da 3 KW da quelli da 6 KW ;;;;;;;;;;
-;;;;;;;;;;
-Tabella Operatore;;;;;;;;;;
-Chiave Operatore(SK);Matricola Operatore;Nome Operatore;Cognome Operatore;Numero Telefono;;;;;;
-0;0;NULL;NULL;NULL;;;;;;
-1;1;Mario;Bianchi;3807689468;;;;;;
-2;2;Angelo;Rossi;3455678902;;;;;;
- ; ;;;;;;;;;
-Tabella Contratto;;;;;;;;;;
-Chiave Contratto (SK);CodiceContratto;TipologiaContratto;DataInizioFornitura;KW Massimi;TempoMassimoIntervento;;;;;
+﻿Tabella Cliente L1;;;;;;;;;; ; 
+Codice Cliente;Tipologia Cliente;Nome ;Cognome ;Indirizzo;Ragione Sociale;Professione;Data Aggiornamento;Nome Riferimento;Cognome Riferimento;;
+1;Privato;Letizia;Palumbo;Via Tevere;;CONSULENTE ;30/01/2020;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+Tabella Cliente L2;;;;;;;;;;;
+Chiave Cliente;Codice Cliente;Tipologia Cliente;Nome ;Cognome ;Indirizzo;Ragione Sociale;Professione;Data inizio professione;Data fine professione;FLAG ATTUALE(Y/N);
+0;0;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;NULL;
+1;1;Privato;Letizia;Palumbo;Via Tevere 14;NULL;STUDENTE;01/01/2020;29/01/2020;N;
+2;1;Privato;Letizia;Palumbo;Via Tevere 14;NULL;CONSULENTE;30/01/2020; ;Y;
+3;2;BUSINESS;NULL;Verdi;Via Corridoni ;ALTEN ITALIA;NULL;NULL;NULL;NULL;
+4;1;Privato;Letizia;Palumbo;Via Tevere 14;NULL;SEGRETARIA;21/01/2023;NULL;Y;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+ ;;;;;;;;;;;
+ ;;;;;;;;;;;
+ ;;;;;;;;;;;
