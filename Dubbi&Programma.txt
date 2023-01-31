@@ -94,6 +94,16 @@ in the end, an update scipt
 
 
 
+---
+Schema stella fatta
+---
+
+fatto:
+-Creare le tabelle
+-Creare la StoredProcedure
+-Popolare tabella dim_tempo
+
+
 
 
 
