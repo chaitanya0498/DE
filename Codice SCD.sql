@@ -190,10 +190,13 @@ values ('02167877-8', 'Privato', 'Giacomo', 'Paleari', 'Via Roma 67, Milano (MI)
 
 -- Cancelliamo le righe di cui non ci serve mantenere la storicizzazione
 DELETE FROM FP_L2_cliente_SCD
-WHERE CodiceCliente IN (SELECT A.CodiceCliente
-from FP_L2_cliente_SCD as B, FP_L2_cliente_SCD as A
-where B.CodiceCliente = A.CodiceCliente and B.Professione = A.Professione AND A.FlagAttuale = 'NO' and (A.Nome <>B.Nome or�
-A.Cognome <>B.Cognome� or A.Indirizzo <>B.Indirizzo or�� A.RagioneSociale <>B.RagioneSociale)) and FlagAttuale = 'NO'
+WHERE CodiceCliente IN (
+                        SELECT A.CodiceCliente
+                        from FP_L2_cliente_SCD as B, FP_L2_cliente_SCD as A
+                        where B.CodiceCliente = A.CodiceCliente and B.Professione = A.Professione AND A.FlagAttuale = 'NO' and (A.Nome <>B.Nome or�
+                        A.Cognome <>B.Cognome� or A.Indirizzo <>B.Indirizzo or�� A.RagioneSociale <>B.RagioneSociale)
+                        )
+      and FlagAttuale = 'NO'
 
 -- Stessa cosa ma per i clienti di tipo Business 
 delete FP_L2_cliente_SCD
