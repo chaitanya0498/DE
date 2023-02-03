@@ -1,0 +1,16 @@
+--TABELLA L2 CLIENTE
+insert into dbo.BPP_L2_dim_cliente(CodiceCliente,TipologiaCliente,Nome,Cognome,
+    Indirizzo,RagioneSociale,Professione,DataInizioProfessione)
+select CodiceCliente, TipologiaCliente, Nome, Cognome, Indirizzo, RagioneSociale, Professione, DataAggiornamento
+from BPP_Cliente
+
+UPDATE BPP_L2_dim_cliente
+SET FlagAttuale =
+ (select CASE
+    Row_number() 
+                OVER( 
+                  partition BY CodiceCliente 
+                  ORDER BY DataInizioProfessione DESC)
+    WHEN 1 THEN 'SI'
+    ELSE 'NO'
+  END)
