@@ -1,0 +1,14 @@
+Programma per la settimana
+
+1. Scaricare un dataset 
+2. Pulizia dei dati
+3. Piano di analisi:
+   3.1 approfondire alcuni concetti utili come le gerarchie
+   3.2 drill-through
+   3.3 riassunto generale sui filtri (tutto quello che dobbiamo sapere
+   3.4 grafici ( schema - quando è conveniente utilizzarli)
+   3.5 come combinare fra loro diversi dataset 
+   3.6 funzioni di base da conoscere DAX
+4. creare un dashboard dei nostri report (pulsanti,drill-through, tooltip..)
+5. se acquisiamo nuovi concetti li possiamo inserire nella guida 
+6. provare a presentare il lavoro ad un cliente esigente
