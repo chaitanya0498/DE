@@ -12,3 +12,21 @@ Programma per la settimana
 4. creare un dashboard dei nostri report (pulsanti,drill-through, tooltip..)
 5. se acquisiamo nuovi concetti li possiamo inserire nella guida 
 6. provare a presentare il lavoro ad un cliente esigente
+
+
+-
+
+BUSINESS PROCESS
+Tenere traccia delle vendite di una catena di negozi dei componenti bici
+
+GRANULARITA'
+Ogni riga indica una singola vendita
+
+TABELLE
+Fatti: Sales_data
+Dimensioni: Sales
+
+
+
+- 
+Come mantenere data type impostato in power BI - nel modo tale di conservarlo quando si aggiorna il sorgente
