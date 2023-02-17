@@ -1,0 +1,32 @@
+
+
+
+End Goal: Implementare Composite Mode per poter riuscire analizzare una qta di dati > 1 GB 
+
+IMPORT : Data stored in CACHE
+DirectQuery : Real time from DB - senza limiti
+
+Today's goal - stesura di un piano per - find the tipping point - when does the data start being HOT and COLD
+
+
+1. Draw an outline of the process shown in the article
+Get data from DB using Direct Query
+- Fact table -> Hot & Cold 
+- Import per hot dati -> Aggregated Tables 
+- Cold Data -> Direct Query dal sorgente
+
+! Non si può passare da DirectQuery a modalità Import
+! No overlapping tra Hot e Cold dati
+
+
+2. Explore our dataset together to 
+- understand what we want out of it
+- find the tipping point - when does the data start being HOT and COLD 
+rispetto TEMPO? 
+Business Area?
+Status - N/C/T
+Costo
+
+
+
+3. Read the linked articles and see other use cases, then discuss together on Monday to begin working
