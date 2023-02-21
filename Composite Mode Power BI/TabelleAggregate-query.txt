@@ -1,0 +1,32 @@
+QUERY - tabelle aggregate
+
+Tabella 'HOT'
+
+SELECT
+    A.ChiaveTempo,A.ChiaveCliente,A.ChiaveContatore,A.ChiaveContratto,A.ChiaveOperatore,A.CodiceLettura,
+	A.ConsumoFascia1,A.ConsumoFascia2,A.ConsumoFascia3,A.DataEmissione,A.DataScadenzaPagamento,
+	A.PeriodoRiferimento,A.PrezzoKWhFascia1,A.PrezzoKWhFascia2,A.PrezzoKWhFascia3,
+	A.ProfessioneClienteAttuale,A.TotaleDaPagare
+FROM BPP_L2_fact_bolletta AS A
+    INNER JOIN (
+        SELECT
+            Data, ChiaveTempo
+        FROM BPP_L2_dim_tempo 
+        ) as B
+        ON  A.ChiaveTempo = B.ChiaveTempo AND B.Data > GETDATE()-120
+
+
+Tabella 'COLD'
+
+SELECT
+    A.ChiaveTempo,A.ChiaveCliente,A.ChiaveContatore,A.ChiaveContratto,A.ChiaveOperatore,A.CodiceLettura,
+	A.ConsumoFascia1,A.ConsumoFascia2,A.ConsumoFascia3,A.DataEmissione,A.DataScadenzaPagamento,
+	A.PeriodoRiferimento,A.PrezzoKWhFascia1,A.PrezzoKWhFascia2,A.PrezzoKWhFascia3,
+	A.ProfessioneClienteAttuale,A.TotaleDaPagare
+FROM BPP_L2_fact_bolletta AS A
+    INNER JOIN (
+        SELECT
+            Data, ChiaveTempo
+        FROM BPP_L2_dim_tempo 
+        ) as B
+        ON  A.ChiaveTempo = B.ChiaveTempo AND B.Data <= GETDATE()-120
