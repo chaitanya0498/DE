@@ -2,31 +2,41 @@ QUERY - tabelle aggregate
 
 Tabella 'HOT'
 
-SELECT
-    A.ChiaveTempo,A.ChiaveCliente,A.ChiaveContatore,A.ChiaveContratto,A.ChiaveOperatore,A.CodiceLettura,
-	A.ConsumoFascia1,A.ConsumoFascia2,A.ConsumoFascia3,A.DataEmissione,A.DataScadenzaPagamento,
-	A.PeriodoRiferimento,A.PrezzoKWhFascia1,A.PrezzoKWhFascia2,A.PrezzoKWhFascia3,
-	A.ProfessioneClienteAttuale,A.TotaleDaPagare
-FROM BPP_L2_fact_bolletta AS A
-    INNER JOIN (
-        SELECT
-            Data, ChiaveTempo
-        FROM BPP_L2_dim_tempo 
-        ) as B
-        ON  A.ChiaveTempo = B.ChiaveTempo AND B.Data > GETDATE()-120
+SELECT   A.SK_Project,A.SK_Gerarchia,A.SK_Data,A.SK_TD,A.ProjectManagerId,A.ProjectManager,   
+A.costAmount,A.revenueAmount,A.SK_HR,A.SK_RisorsaFROM L2_Alten_F_HR AS A    
+INNER JOIN L2_Alten_D_Tempo AS B      
+ON  A.SK_Data = B.SK_Data      
+ WHERE                 
+datefromparts(B.Anno, B.Mese, 1)> GETDATE() - 120
 
 
 Tabella 'COLD'
 
-SELECT
-    A.ChiaveTempo,A.ChiaveCliente,A.ChiaveContatore,A.ChiaveContratto,A.ChiaveOperatore,A.CodiceLettura,
-	A.ConsumoFascia1,A.ConsumoFascia2,A.ConsumoFascia3,A.DataEmissione,A.DataScadenzaPagamento,
-	A.PeriodoRiferimento,A.PrezzoKWhFascia1,A.PrezzoKWhFascia2,A.PrezzoKWhFascia3,
-	A.ProfessioneClienteAttuale,A.TotaleDaPagare
-FROM BPP_L2_fact_bolletta AS A
-    INNER JOIN (
-        SELECT
-            Data, ChiaveTempo
-        FROM BPP_L2_dim_tempo 
-        ) as B
-        ON  A.ChiaveTempo = B.ChiaveTempo AND B.Data <= GETDATE()-120
+SELECT   A.SK_Project,A.SK_Gerarchia,A.SK_Data,A.SK_TD,A.ProjectManagerId,A.ProjectManager,   
+A.costAmount,A.revenueAmount,A.SK_HR,A.SK_RisorsaFROM L2_Alten_F_HR AS A    
+INNER JOIN L2_Alten_D_Tempo AS B      
+ON  A.SK_Data = B.SK_Data      
+ WHERE                 
+datefromparts(B.Anno, B.Mese, 1) <= GETDATE() - 120
+
+Tabella 'HOT' aggregata per PROJECT
+
+SELECT   A.SK_Project,  
+SUM(A.costAmount) AS Costo ,SUM(A.revenueAmount) AS Ricavo
+FROM L2_Alten_F_HR AS A    
+INNER JOIN L2_Alten_D_Tempo AS B      
+ON  A.SK_Data = B.SK_Data      
+ WHERE                 
+datefromparts(B.Anno, B.Mese, 1) > GETDATE() - 120 
+group by A.SK_Project 
+
+Tabella 'COLD' aggregata per PROJECT
+
+SELECT   A.SK_Project,  
+SUM(A.costAmount) AS Costo ,SUM(A.revenueAmount) AS Ricavo
+FROM L2_Alten_F_HR AS A    
+INNER JOIN L2_Alten_D_Tempo AS B      
+ON  A.SK_Data = B.SK_Data      
+ WHERE                 
+datefromparts(B.Anno, B.Mese, 1) <= GETDATE() - 120 
+group by A.SK_Project 
