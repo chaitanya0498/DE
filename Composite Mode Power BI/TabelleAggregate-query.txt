@@ -40,3 +40,11 @@ ON  A.SK_Data = B.SK_Data      
  WHERE                 
 datefromparts(B.Anno, B.Mese, 1) <= GETDATE() - 120 
 group by A.SK_Project 
+
+
+NUOVA MISURA 
+Total Costo Hot & Cold = 
+                          VAR vCostoHot = SUM(FACT_HOT[costAmount]) 
+                          VAR vCostoCold = SUM(FACT_COLD[costAmount])
+RETURN
+vCostoHot + vCostoCold
