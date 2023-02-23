@@ -48,3 +48,15 @@ Total Costo Hot & Cold =
                           VAR vCostoCold = SUM(FACT_COLD[costAmount])
 RETURN
 vCostoHot + vCostoCold
+-----
+Total Costo = 
+               VAR vCostoHot = SUM(FACT_HOT[costAmount])
+               VAR vCostoCold = IF(
+                                     MIN(L2_Alten_D_Tempo[Data]) < DATE(2022,11,1) ,
+                                     SUM(FACT_COLD[costAmount])
+                                   )
+RETURN
+vCostoHot + vCostoCold
+
+
+
